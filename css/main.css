@@ -1,0 +1,91 @@
+body{
+    margin:0;
+    background-color:#010319;
+}
+
+#title-container{
+    /*background:#ebd7ac;*/
+    line-height:0;
+    text-align: center;
+    max-width:1280px;
+    margin:20px auto;
+    position: relative;
+    overflow: hidden;
+
+    /*transition: opacity 100ms;*/
+}
+#title-background{
+    position: absolute;
+    left:0;
+    top:0;
+    bottom:0;
+    width:5000px;
+    background:linear-gradient(to right, #f0d8a6 0%,#b3893a 24%,#dfc18d 64%,#c37a2e 79%,#af9a70 100%);
+    animation: moving 15s infinite;
+}
+
+@keyframes moving{
+    0%{
+        transform:translateX(0);
+    }
+    50%{
+        transform:translateX(-3700px);
+    }
+    100%{
+        transform:translateX(0);
+    }
+}
+
+#title-container img{
+    width:100%;
+    position: relative;
+}
+
+.star-container{
+    position: absolute;
+    width:40px;
+    height:40px;
+    background-repeat: no-repeat;
+    transition: opacity 1000ms;
+}
+
+.moon-container{
+    background-image:url(../imgs/moon.png);
+    width:200px;
+    height:320px;
+    background-position: right;
+    position: absolute;
+    background-size:auto 100%;
+    background-repeat:no-repeat;
+    background-color:#010319;
+}
+
+#ice-container{
+    width:100%;
+    background-color:#b4d7ff;
+    height:80vh;
+    position: absolute;
+    bottom:0;
+}
+
+#ice-container:before{
+    /*position: absolute;
+    width:100%;
+    top:-170px;
+    background-image:url(../imgs/mountains.png);
+    background-size:cover;
+    height:200px;
+    background-position: center center;
+    z-index:5;
+    display: block;
+    content:'';*/
+}
+
+.penguin-container{
+    position: absolute;
+    /*border:1px solid #fff;*/
+    box-sizing: border-box;
+}
+.penguin-container img{
+    width:100%;
+}
